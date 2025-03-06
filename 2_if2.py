@@ -14,13 +14,26 @@
   и выводя на экран результаты
 
 """
+str1 = input("Введите первую строку: ")
+str2 = input("Введите вторую строку: ")
 
-def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
+def main(str1, str2):
+  if type(str1) == str and type(str2) == str:
+    if str1 == str2:
+      return "1"
+    elif len(str1) > len(str2):
+      return "2"
+    elif str1 != str2 and str2 == "learn":
+      return "3"
+  else:
+    return "0"
+print (main(str1, str2))
+
+
+
     
 if __name__ == "__main__":
-    main()
+    main(str1, str2)
+
+# print (main(str1, str2))
+
